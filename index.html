@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>СПС</title>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -17,34 +18,34 @@
       <nav class="site-navbar">
         <ul class="nav-list">
           <li class="list-item">
-            <a href="#" class="navlink">Купоны и сертификаты</a>
+            <a href="#" class="nav-link">Купоны и сертификаты</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Впечатления</a>
+            <a href="#" class="nav-link">Впечатления</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Авиабилеты</a>
+            <a href="#" class="nav-link">Авиабилеты</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Ксертификаты</a>
+            <a href="#" class="nav-link">Ж/д билеты</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Ксертификаты</a>
+            <a href="#" class="nav-link">Отели</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Кфикаты</a>
+            <a href="#" class="nav-link">Каршеринг</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Куификаты</a>
+            <a href="#" class="nav-link">Театры</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Купоаты</a>
+            <a href="#" class="nav-link">Страхование</a>
           </li>
           <li class="list-item">
-            <a href="#" class="navlink">Купонкаты</a>
+            <a href="#" class="nav-link">Купонкаты</a>
           </li>
-          <li class="list-item">
-            <a href="#" class="navlink">Купоикаты</a>
+          <li class="list-item active">
+            <a href="#" class="nav-link active-link">Партнеры</a>
           </li>
         </ul>
       </nav>
@@ -53,14 +54,19 @@
           <a class="pitr-link" href="#">Санкт-Петербург</a>
         </div>
         <div class="bottom">
-          <button type="button">
-            <img src="img/search.png" width="24" height="24" alt="Search button">
-          </button>
-          <a class="kirish" href="#">Войти</a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET" >
+            <label class="visually-hidden" for="search">Search</label>
+            <input class="search-input" type="search" name="search" id="search">
+            <button class="search-btn" type="button">
+              <img src="img/search.png" width="24" height="24" alt="Search button">
+            </button>
+            <a class="kirish" href="#">Войти</a>
+          </form>
         </div>
       </div>
     </div>
   </header>
+
 
 </body>
 </html>

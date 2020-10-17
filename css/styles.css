@@ -12,7 +12,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Architects Daughter', cursive, "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -49,17 +49,107 @@ img {
   align-items: center;
 }
 
+.site-logo {
+  margin-right: 33px;
+}
+
+.site-logo img {
+  display: block;
+}
+
+.site-navbar {
+  padding: 22px 0;
+}
+
 .nav-list {
   max-width: 749px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #808080;
+  padding: 0 12px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.nav-link:hover::before,
+.active::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: #000;
+}
+
+.active-link {
+  color: #000;
+  font-weight: 520;
+}
+
+.nav-right-section {
+  margin-left: auto;
+}
+
+.pitr-link {
+  text-decoration: none;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 
+.pitr-link::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/geo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 10px;
+}
 
+.bottom {
+  display: flex;
+  align-items: center;
+}
 
+.kirish {
+  text-decoration: none;
+  color: #00D36D;
+  border: 2px solid #00D36D;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin-left: 20px;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.search-input {
+  max-width: 55px;
+  border: none;
+  border-bottom: 1px solid #808080;
+  display: none;
+}
 
 
 
