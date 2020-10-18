@@ -70,9 +70,9 @@
   <!-- MAIN  SECTION -->
 
   <main class="main-section">
-    <div class="container">
+    <div class="container main-bgcolor">
       <div class="partnyori">
-        <h1>Партнеры и предложен</h1>
+        <h1 class="partnyori-title">Партнеры и предложен</h1>
         <ul class="partnyori-list">
           <li class="partnyori-item">
             <a href="#" class="partnyori-link">Все партнеры</a>
@@ -93,7 +93,7 @@
             <a href="#" class="partnyori-link">Красота</a>
           </li>
           <li class="partnyori-item">
-            <a href="#" class="partnyori-link">Электроника и бытовая техника</a>
+            <a href="#" class="partnyori-link partnyori-active-link">Электроника и бытовая техника</a>
           </li>
           <li class="partnyori-item">
             <a href="#" class="partnyori-link">Зоотовары</a>
@@ -102,19 +102,22 @@
             <a href="#" class="partnyori-link">Кино и театр</a>
           </li>
           <li class="partnyori-item">
-            <button type="button" class="partnyori-link">• • •</button>
+            <button type="button" class="partnyori-link partnyori-btn">• • •</button>
           </li>
         </ul>
       </div>
 
-      <form action="echo.htmlacademy.ru" method="POST">
-        <label for="">
-          <input type="radio">
-        </label>
-        <label for="">
-          <input type="radio">
-        </label>
-      </form>
+      <div class="form-buttons">
+        <form class="zzz" action="echo.htmlacademy.ru" method="POST">
+          <label class="radio-label label-1" for="opt1">Начисляют спасибо
+            <input class="radio-1" type="radio" name="opt" id="opt1">
+          </label>
+
+          <label class="radio-label label-2" for="opt2">
+            <input class="radio-2" type="radio" name="opt" id="opt2">Принимают спасибо
+          </label>
+        </form>
+      </div>
 
       <div class="partnyori-cards">
         <div class="card">

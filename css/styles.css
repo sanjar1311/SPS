@@ -15,7 +15,7 @@ body {
   font-family: 'Architects Daughter', cursive, "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #E5E5E5;
   color: #222;
 }
 
@@ -47,6 +47,7 @@ img {
 .container-flex {
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 
 .site-logo {
@@ -150,6 +151,118 @@ img {
   border-bottom: 1px solid #808080;
   display: none;
 }
+
+      /* MAIN  SECTION */
+
+.main-bgcolor{
+  background-color: #F2F4F7;
+}
+
+.partnyori-title {
+  margin: 0;
+  padding: 70px 0 50px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+.partnyori-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.partnyori-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 15px 12px;
+  background-color: #fff;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.partnyori-active-link {
+  background-color: #00D36D;
+  color: #fff;
+}
+
+.partnyori-btn {
+  border: none;
+  cursor: pointer;
+  padding: 19px 10px;
+}
+
+    /* RADIO BUTTONS */
+
+
+.zzz{
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  display: block;
+  font-size: 18px;
+  width: 110px;
+  text-align: center;
+}
+
+.radio-1,
+.radio-2 {
+  display: none;
+}
+
+.label-1 {
+  position: relative;
+  margin-left: auto;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.label-2 {
+  position: relative;
+  margin-right: auto;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+.label-1::after {
+  position: absolute;
+  right: -68px;
+  top: 15px;
+  content: "";
+  z-index: 1;
+  width: 58px;
+  height: 24px;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #E4E6E9;
+  background-color: #fff;
+}
+
+.label-2::before {
+  position: absolute;
+  top: 18px;
+  right: 137px;
+  z-index: 15;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #00D36D;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #E4E6E9;
+  transition: transform .5s ease;
+}
+
+.radio-1:checked  .label-2::before {
+  transform: translateX(-68px);
+}
+
 
 
 
