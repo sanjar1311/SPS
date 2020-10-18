@@ -198,70 +198,68 @@ img {
 
     /* RADIO BUTTONS */
 
-
-.zzz{
+.nmadr {
+  position: relative;
   display: flex;
-  align-items: center;
+  width: 321px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease;
 }
 
-.radio-label {
-  display: block;
-  font-size: 18px;
-  width: 110px;
+.nmadr label {
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.radio-1,
-.radio-2 {
+.nmadr span{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background-color: #fff;
+  display: block;
+  top: 12px;
+  left: 125px;
+  border-radius: 20px;
+  border: 1px solid #E4E6E9;
+  transition: all 0.3s ease;
+}
+
+.nmadr span::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 2px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #00D36D;
+  transition: all 0.3s ease;
+}
+
+input[type=radio] {
   display: none;
 }
 
-.label-1 {
-  position: relative;
-  margin-left: auto;
-  margin-right: 45px;
-  cursor: pointer;
-}
-
-.label-2 {
-  position: relative;
-  margin-right: auto;
-  margin-left: 45px;
-  cursor: pointer;
-}
-
-.label-1::after {
+.label[for=no]{
   position: absolute;
-  right: -68px;
-  top: 15px;
-  content: "";
-  z-index: 1;
-  width: 58px;
-  height: 24px;
-  display: block;
-  border-radius: 12px;
-  border: 1px solid #E4E6E9;
-  background-color: #fff;
+  right: 0;
 }
 
-.label-2::before {
-  position: absolute;
-  top: 18px;
-  right: 137px;
-  z-index: 15;
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-color: #00D36D;
-  display: block;
-  border-radius: 50%;
-  border: 1px solid #E4E6E9;
-  transition: transform .5s ease;
+#no:checked ~ .nmadr span::after {
+  transform: translateX(-150%);
 }
 
-.radio-1:checked  .label-2::before {
-  transform: translateX(-68px);
+#no:checked ~ .nmadr label[for=no]{
+  color: #00D36D;
 }
+
+#yes:checked ~ .nmadr label[for=yes]{
+  color: #00D36D;
+}
+
 
 .cardss {
   display: flex;
