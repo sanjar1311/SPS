@@ -327,6 +327,38 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.bit-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bit-card {
+  margin-right: 13px;
+  margin-bottom: 40px;
+}
+
+.texno-textes {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texno-box {
+  margin-left: 15px;
+}
+
+.texno {
+  color: #808080;
+  font-size: 14px;
+}
+
+.texno-text {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
 }
 
 
