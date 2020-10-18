@@ -304,6 +304,30 @@ img {
   text-align: center;
 }
 
+.card-btn {
+  text-decoration: none;
+  background-color: #00D36D;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 43%;
+  margin-bottom: 50px;
+}
+
+    /* ASIDE */
+
+.aside {
+  background-color: #F2F4F7;
+}
+
+.aside-title {
+  width: 715px;
+  margin: 0;
+  padding-top: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
