@@ -182,8 +182,8 @@ img {
 .partnyori-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
+  justify-content: center;
 }
 
 .partnyori-link {
@@ -229,6 +229,7 @@ img {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 5000;
 }
 
 .nmadr span{
@@ -255,10 +256,7 @@ img {
   border-radius: 50%;
   background-color: #00D36D;
   transition: all 0.3s ease;
-}
-
-input[type=radio] {
-  display: none;
+  cursor: pointer;
 }
 
 .label[for=no]{
